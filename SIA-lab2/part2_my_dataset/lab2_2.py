@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 df = pd.read_csv('hotel_bookings.csv', sep=';')
 
-#0 - Размер, форма и типы данных в дататсете
+#0 - Размер, форма и типы данных в датасете
 shape = df.shape
 size = df.size
 types = df.dtypes
@@ -19,6 +19,7 @@ print(100*df['meal'].value_counts().loc['FB']/len(df))
 #2 - График количества заездов по месяцам
 #df['arrival_date_month'].value_counts().plot(x='arrival_date_month')
 #plt.show()
+
 #3 - Круговая диаграмма гостей отеля по странам, которым номера заказало туристическое агенство
 #df.query('distribution_channel == "TA/TO"')['country'].value_counts().plot.pie(y='country')
 #plt.show()
@@ -26,6 +27,7 @@ print(100*df['meal'].value_counts().loc['FB']/len(df))
 #4 - Процент случаев, когда зарезервированный номер не совпадает с утвержденным
 print("Процент случаев, когда зарезервированный номер не совпадает с утвержденным")
 print(100*len(df.query('reserved_room_type != assigned_room_type'))/len(df))
+
 #5 - Гистограмма людей которые забронировали номер во второй раз по странам
 #df.query('is_repeated_guest == 1')['country'].value_counts().plot.bar()
 #plt.show()
