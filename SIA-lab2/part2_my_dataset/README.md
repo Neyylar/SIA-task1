@@ -1,9 +1,9 @@
 # СИА - лабораторная 2. Задание 2.
 Датасет: Hotel bookings.  
 Описание: This data set contains a single file which compares various booking information between two hotels: a city hotel and a resort hotel.
-###Текст задания: 
+### Текст задания: 
 Придумать вопросы к своему датасету
-###Вопросы: 
+### Вопросы: 
 0. Размер, форма и типы данных в датасете 
 1. Процентное соотношение людей, заказывавших приемы пищи в отеле
 2. График количества заездов по месяцам
